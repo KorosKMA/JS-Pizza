@@ -1,0 +1,201 @@
+@media (max-width: 800px) {
+    #cart {
+        min-width: 280px!important;
+        width: 280px!important;
+
+        .cart-title-panel, .order-one .order-title {
+            font-size: 16px!important;
+            line-height: 18px!important;
+        }
+    }
+}
+
+#cart{
+
+    position: fixed!important;
+    min-width: 330px;
+    width: 330px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding-top: 35px;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: rgba(0,0,0,.2) -3px 3px 10px;
+
+    .cart-title-panel {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 17px;
+        padding-left: 15px;
+
+        .num-of-orders-circle{
+            background-color: #ec890e;
+            color: white;
+            min-width: 10px;
+            padding: 3px 7px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            border-radius: 10px;
+        }
+
+    }
+
+    .clear-orders-button{
+        display: inline-block;
+        float: right;
+        margin-top: 5px;
+        cursor: pointer;
+        padding-right: 15px;
+        font-size: 10px;
+        line-height: 11px;
+        font-weight: 400;
+        color: rgba(0,0,0,.5);
+    }
+
+    .order-box-container{
+        height: 100%;
+        padding-bottom: 157px;
+    }
+
+    .order-box{
+        margin-top: 30px;
+        background-color: #F5F5F5;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .empty-cart-text{
+            font-size: 16px;
+            color: #4e4e4e;
+            text-align: center;
+            padding-top: 48px;
+        }
+
+        .pizza-order{
+            height: 120px;
+            padding: 20px 61px 10px 24px;
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            position: relative;
+            overflow: hidden;
+
+            .order-pizza-icon{
+                position: absolute;
+                right: -48px;
+                top: 15px;
+                border-radius: 50% 0 0 50%;
+                max-height: 96px;
+                max-width: 96px;
+                vertical-align: middle;
+                border: 0;
+            }
+
+            .order-pizza-title{
+                margin: 0 0 10px;
+                font-size: 16px;
+                line-height: 18px;
+                color: #ec890e;
+            }
+
+            .order-pizza-parameters{
+                font-size: 12px;
+                line-height: 16px;
+                margin: 6px 0 8px;
+
+                .gram-image{
+                    margin-left: 15px;
+                }
+            }
+
+            .order-pizza-buttons{
+                font-size: 14px;
+                font-weight: 700;
+
+                .price{
+                    margin-right: 10px;
+                }
+
+                .btn{
+                    outline-style: none;
+                }
+
+                .btn-circle{
+                    width: 30px;
+                    height: 30px;
+                    padding: 6px 0;
+                    font-size: 12px;
+                    line-height: 1.428571429;
+                    border-radius: 15px;
+                }
+
+                .btn-danger{
+                    background-image: linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);
+                    border-color: #b92c28;
+                }
+
+                .order-pizza-count{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    font-size: 14px;
+                }
+
+                .btn-success{
+                    background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+                    border-color: #3e8f3e;
+                }
+
+                .btn-default{
+                    background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+                    border-color: #ccc;
+                    margin-left: 5px;
+
+                    .icon-orange{
+                        color: #ec890e;
+                    }
+                }
+            }
+        }
+    }
+
+    .confirm-order-panel{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 107px;
+        background-color: white;
+        padding: 10px;
+        border-top: 1px solid rgba(0,0,0,.1);
+
+        .sum-title{
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .sum-number{
+            font-weight: 700;
+            font-size: 20px;
+            float: right;
+            padding-right: 10px;
+            margin-bottom: 15px;
+        }
+
+        .order-button{
+            padding: 20px;
+
+            .button-edit{
+                color: black!important;
+                background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%)!important;
+                border-color: #a1a1a1!important;
+            }
+        }
+    }
+}
+    

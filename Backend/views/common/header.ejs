@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title><%= pageTitle %> - Pizza</title>
+
+    <style>
+        .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+            color: white;
+            background-color: #ec890e!important;
+        }
+        .nav-pills > li.active > a:hover {
+            background-color: #ec890e;
+            color: white;
+        }
+
+        .nav-pills > li > a, .nav-pills > li > a:focus {
+            color: #ec890e;
+        }
+        .nav-pills > li > a:hover {
+            color: #ec890e;
+        }
+    </style>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top top-panel">
+    <div class="site-icon">
+        <div class="discount-v-ends discount-top"></div>
+        <a href="index.html">
+            <p>Pizza</p>
+            <p>KMA</p>
+        </a>
+    </div>
+    <div class="header-top-row">
+        <div class="main-header-top-items clearfix">
+            <div class="main-header-top-item phone-number visible-xs-inline-block visible-sm-inline-block visible-lg-inline-block visible-md-inline-block">
+                (044)-XXX-X-XXX
+            </div>
+            <div class="main-header-top-item work-days visible-lg-inline-block visible-md-inline-block">
+                24 години/ 7 днів на тиждень
+            </div>
+            <div class="main-header-top-item delivery visible-lg-inline-block">
+                Безкоштовна доставка піци
+            </div>
+            <div type="button" class="main-header-top-item btn btn-warning sign-in-button">
+                Ввійти
+            </div>
+        </div>
+    </div>
+    <div class="header-down-row">Піца</div>
+</div>

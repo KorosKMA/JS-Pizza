@@ -1,0 +1,57 @@
+@mainColor: orange;
+
+@media (max-width: 800px) {
+    .pizza-selection-panel {
+        padding-left: 18px!important;
+        padding-right: 298px!important;
+    }
+}
+.pizza-selection-panel{
+    padding-right: 360px;
+    padding-left: 30px;
+}
+
+body{
+    background-color: #fffff5;
+    min-width: 719px!important;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn{
+    background-image: linear-gradient(to bottom,#f0ad4e 0,#eb9316 100%);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    border-color: #e38d13;
+    outline: none!important;
+}
+
+.clearfix::after{
+    visibility:hidden;
+    display:block;
+    content:"";
+    height:0;
+    clear:both;
+}
+
+.footer{
+    background-color: white;
+    padding: 40px 0;
+    padding-right: 330px;
+    border-top: 1px solid #e5e5e5; 
+    text-align: center;
+    color: grey;
+}
+
+@import "panels/top-panel";
+
+@import "panels/discount-panel";
+
+@import "pizza/main-container";
+
+@import "pizza/pizza-card";
+
+@import "pizza/cart";
+
+@import "order";

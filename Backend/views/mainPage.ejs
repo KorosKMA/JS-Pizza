@@ -1,0 +1,54 @@
+<% include common/header.ejs %>
+
+<div class="main-container container-fluid">
+    <div class="row">
+        <div class="pizza-selection-panel">
+            <div class="page-title">
+                <div class="pizza-type">
+                    <span class="pizza-type-name">Усі піци</span>
+                    <span class="pizza-number-total">8</span>
+                </div>
+            </div>
+            <div class="all-pizza-type-wrap">
+                <ul class="nav nav-pills text-center">
+                    <li role="presentation" class="pizza-filter-button active" id="all">
+                        <a href="#">
+                            Усі
+                        </a>
+                    </li>
+                    <li role="presentation" class="pizza-filter-button" id="meat">
+                        <a href="#">
+                            Мясні
+                        </a>
+                    </li>
+                    <li role="presentation" class="pizza-filter-button" id="pineapple">
+                        <a href="#">
+                            З ананасами
+                        </a>
+                    </li>
+                    <li role="presentation" class="pizza-filter-button" id="mushroom">
+                        <a href="#">
+                            З грибами
+                        </a>
+                    </li>
+                    <li role="presentation" class="pizza-filter-button" id="ocean">
+                        <a href="#">
+                            З морепродуктами
+                        </a>
+                    </li>
+                    <li role="presentation" class="pizza-filter-button" id="vega">
+                        <a href="#">
+                            Вега
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row" id="pizza_list">
+            </div>
+        </div>
+    </div>
+</div>
+
+<% var ordered = false %>
+<% include common/cart.ejs %>
+<% include common/footer.ejs %>

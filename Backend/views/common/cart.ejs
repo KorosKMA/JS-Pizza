@@ -1,0 +1,36 @@
+<div id="cart">
+    <div class="cart-header">
+        <div class="cart-title-panel">
+            <span class="cart-title">Замовлення</span>
+            <span class="num-of-orders-circle">0</span>
+        </div>
+        <% if(!ordered) { %>
+        <div class="clear-orders-button">Очистити замовлення</div>
+        <% } %>
+    </div>
+    <div class="order-box-container">
+        <div class="order-box">
+            <div class="empty-cart-text">Пусто в холодильнику?<br>Замовте піцу!</div>
+        </div>
+    </div>
+    <div class="confirm-order-panel">
+        <div class="hidden sum">
+                <span class="sum-title" style="display: inline;">
+                        Сума замовлення
+                    </span>
+            <span class="sum-number" style="display: block;">99</span>
+            <span> грн</span>
+        </div>
+        <div class="order-button">
+            <% if(!ordered) { %>
+            <button type="button" class="btn btn-warning btn-lg btn-block button-order" disabled="">
+                Замовити
+            </button>
+            <% } else { %>
+            <button type="button" class="btn btn-warning btn-lg btn-block button-edit">
+                Редагувати замовлення
+            </button>
+            <% } %>
+        </div>
+    </div>
+</div>

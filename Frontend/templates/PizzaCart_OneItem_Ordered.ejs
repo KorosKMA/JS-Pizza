@@ -1,0 +1,27 @@
+<div class="pizza-order">
+    <img class="order-pizza-icon" alt="Піца" src=<%= pizza.icon %>>
+    <div class="order-pizza-title"><%= pizza.title %> (<% if(size == "big_size") { %>Велика<% } else {%>Мала<% } %>)</div>
+    <div class="order-pizza-parameters">
+        <img class="diagonal-image" src="assets/images/size-icon.svg">
+        <span class="diagonal"><%= pizza[size].size %></span>
+        <img class="gram-image" src="assets/images/weight.svg">
+        <span class="gram"><%= pizza[size].weight %></span>
+    </div>
+    <div class="order-pizza-buttons">
+        <span class="price"><%= pizza[size].price %>грн</span>
+
+        <span class="label order-pizza-count" style="color:black;"><%= quantity %>
+            <% var last_number = (quantity>10 ? quantity.toString().slice(-2) : quantity.toString().slice(-1))%>
+            <% if(last_number > 9 && last_number < 21) { %>
+            піц
+            <% } else if((last_number=last_number.slice(-1)) == 1) { %>
+            піца
+            <% } else if((last_number > 1) && (last_number < 5)) { %>
+            піци
+            <% } else { %>
+            піц
+            <% } %>
+        </span>
+
+    </div>
+</div>

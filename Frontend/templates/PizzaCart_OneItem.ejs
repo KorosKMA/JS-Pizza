@@ -1,0 +1,27 @@
+<div class="pizza-order">
+    <img class="order-pizza-icon" alt="Піца" src=<%= pizza.icon %>>
+    <div class="order-pizza-title"><%= pizza.title %> (<% if(size == "big_size") { %>Велика<% } else {%>Мала<% } %>)</div>
+    <div class="order-pizza-parameters">
+        <img class="diagonal-image" src="assets/images/size-icon.svg">
+        <span class="diagonal"><%= pizza[size].size %></span>
+        <img class="gram-image" src="assets/images/weight.svg">
+        <span class="gram"><%= pizza[size].weight %></span>
+    </div>
+    <div class="order-pizza-buttons">
+        <span class="price"><%= pizza[size].price %>грн</span>
+
+        <button class="minus btn btn-xs btn-danger btn-circle">
+            <i class="glyphicon glyphicon-minus icon-white"></i>
+        </button>
+
+        <span class="label order-pizza-count" style="color:black;"><%= quantity %></span>
+
+        <button class="plus btn btn-xs btn-success btn-circle">
+            <i class="glyphicon glyphicon-plus icon-white"></i>
+        </button>
+        <button class="count-clear btn btn-xs btn-default btn-circle">
+            <i class="glyphicon glyphicon-remove icon-orange"></i>
+        </button>
+
+    </div>
+</div>

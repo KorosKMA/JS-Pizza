@@ -1,0 +1,64 @@
+<% include common/header.ejs %>
+
+<div class="main-container container-fluid">
+    <div class="pizza-selection-panel" style="padding-top: 50px; text-align: left; margin-left: -15px">
+        <div class="confirm-order-form-name-1">1. Контактні дані</div>
+        <div class="col-md-7">
+            <div class="form-group row" id="formName">
+                <label class="col-sm-2 control-label">Ім’я</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="inputName" placeholder="ПІБ" value="">
+                    <span class="hidden help-block">Введіть тільки власне ім’я, без цифр</span>
+                </div>
+            </div>
+            <div class="form-group row" id="formPhone">
+                <label class="col-sm-2 control-label">Телефон</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="inputPhone" placeholder="+380994010999" value="">
+                    <span class="hidden help-block">Введіть номер телефону у форматі +380 або почніть з 0</span>
+                </div>
+            </div>
+            <div class="form-group row" id="formAdress">
+                <label class="col-sm-2 col control-label">Адреса</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="inputAdress" placeholder="Київ, вул. Спаська, 2" value="">
+                    <span class="hidden help-block">Введіть адресу доставки піци</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="order-info-block">
+                <div class="info-title">Інформація про замовлення</div>
+                <div class="time-info-block">
+                    <b>Приблизний час доставки: </b>
+                    <span class="time-info">невідомий</span>
+                </div>
+                <div class="address-info-block">
+                    <b>Адреса доставки: </b>
+                    <span class="address-info">невідома</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button	type="submit" class="btn button-continue">
+                <span>Далі</span>
+                <i class="glyphicon glyphicon-chevron-right icon-white"></i>
+            </button>
+        </div>
+    </div>
+    <div class="map-container">
+        <div id="googleMap"></div>
+        <script	type="text/javascript"
+                   src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB0K3kVGI1e9gpEfET8xO2MmXu8aLDVfXk">
+        </script>
+    </div>
+    <!-- місце для віджету -->
+    <div id="liqpay"></div>
+    <!-- піключаємо скрипт -->
+    <script src="//static.liqpay.com/libjs/checkout.js">
+    </script>
+</div>
+
+<% var ordered = true %>
+<% include common/cart.ejs %>
+<% include common/footer.ejs %>
